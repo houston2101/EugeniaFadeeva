@@ -1,0 +1,26 @@
+.navigation{
+background-color: silver;
+width: 15em;
+float: left;
+}
+
+.article{
+background-color: darkgray; 
+margin-bottom: 2em;
+margin-left: 15em; 
+}
+
+.img{
+height: 7em;
+width: 7em;
+margin-left: 73em;
+}
+
+body{
+background-color: gainsboro;
+}
+
+footer{
+background-color: silver;
+clear: both;
+}
