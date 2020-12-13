@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Links</title>
+	<meta charset="utf-8">
+
+	<style>
+
+/*стилевые св-ва для 1-го способа реализации*/
+div.firstway a{
+	color: green;
+}
+
+div.firstway a:hover{
+    color: red; 
+    text-decoration: underline;
+}
+
+div.firstway img{
+    height: 30px;
+    width: 5px;
+    margin: 5px;
+    vertical-align: middle;
+}
+/*стилевые св-ва для 2-го способа реализации*/
+div.secondway a{
+	color: green;
+}
+
+div.secondway a:hover{
+    color: red; 
+    text-decoration: underline;
+}
+
+div.secondway img{
+  	height: 30px;
+    width: 5px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+div.secondway li{
+    display: inline;
+}
+
+div.secondway ul{
+  	padding-left: 0;
+  	margin: 0;
+}
+/*стилевые св-ва для 3-го способа реализации*/
+div.thirdway a{
+	color: green;
+}
+
+div.thirdway a:hover{
+    color: red; 
+    text-decoration: underline;
+}
+
+div.thirdway p{
+	height: 25px;
+	display: inline-block; 
+	border-right: solid red 3px;
+	vertical-align: center;
+	padding-right: 6px;
+	padding-left: 6px;
+	margin-top: 5px;
+	vertical-align: center;
+}
+
+div.thirdway p:last-child{ 
+	border-right: none;
+}
+
+div.thirdway p:first-child{ 
+	padding-left: 0px;
+}
+	</style>
+</head>
+
+<body>
+<div>
+<!--Вариант 1: разделительные линии реализованы как картинки, ссылки просто идут друг за другом-->
+<!---->
+<div class="firstway">
+	<a href="http://htmlbook.ru/html/style">первая ссылка</a><img src="line.jpg">
+	<a href="http://htmlbook.ru/samhtml/tablitsy/vlozhennye-tablitsy">вторая ссылка</a><img src="line.jpg">
+	<a href="http://htmlbook.ru/samlayout/verstka-s-pomoshchyu-tablits/osobennosti-tablits">третья ссылка</a><img src="line.jpg">
+	<a href="http://htmlbook.ru/css/display">четвертая ссылка</a><img src="line.jpg">
+	<a href="http://htmlbook.ru/css/table-layout">пятая ссылка</a>
+</div>
+
+<!--Вариант 2: Реализация с помощью горизонтального списка (разделительные линии также реализованы через картинки)-->
+<div class = "secondway">
+<ul>
+	<li><a href="http://htmlbook.ru/html/style">первая ссылка</a></li><img src="line.jpg">
+	<li><a href="http://htmlbook.ru/samhtml/tablitsy/vlozhennye-tablitsy">вторая ссылка</a></li><img src="line.jpg">
+	<li><a href="http://htmlbook.ru/samlayout/verstka-s-pomoshchyu-tablits/osobennosti-tablits">третья ссылка</a></li><img src="line.jpg">
+	<li><a href="http://htmlbook.ru/css/display">четвертая ссылка</a></li><img src="line.jpg">
+	<li><a href="http://htmlbook.ru/css/table-layout">пятая ссылка</a></li>
+</ul>
+</div>
+
+<!--Вариант 3: Реализация через <p> (в ряд выстроены при помощи display: inline-block;) и селекторы псевдокласса.-->
+<!--Разделители - стилизованные границы контейнера-->
+<div class="thirdway">
+	<p><a href="http://htmlbook.ru/html/style">первая ссылка</a></p>
+    <p><a href="http://htmlbook.ru/samhtml/tablitsy/vlozhennye-tablitsy">вторая ссылка</a></p>
+    <p><a href="http://htmlbook.ru/samlayout/verstka-s-pomoshchyu-tablits/osobennosti-tablits">третья ссылка</a></p>
+    <p><a href="http://htmlbook.ru/css/display">четвертая ссылка</a></p>
+    <p><a href="http://htmlbook.ru/css/table-layout">пятая ссылка</a></p>
+</div>
+
+</div>
+
+</body>
+
+</html>

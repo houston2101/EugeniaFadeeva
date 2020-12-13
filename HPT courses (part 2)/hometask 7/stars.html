@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>stars</title>
+<style>
+
+/*исходное состояние*/	
+div.stars div{ 
+display: inline;
+background-image: url("star0.png");
+display: inline-block;
+width: 75px;
+height: 77px;
+}
+
+/*реакция на действие(наведение курсора)*/
+
+/*при наведении курсора выделяется весь блок с div'ами(5 шт.)*/
+div.stars:hover div{
+background-image: url("star1.png");
+}
+
+/*все div'ы после выделенного курсором обесцвечиваются*/
+div.stars div:hover~div{
+background-image: url("star0.png");
+}
+
+</style>
+</head>
+
+<body>
+<div class="stars">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+</body>
+
+</html>

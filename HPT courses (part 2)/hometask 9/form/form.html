@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Adaptive form</title>
+</head>
+
+<style>
+	@import url("formstyle.css");
+</style>
+
+<body>
+
+<form>
+<fieldset>
+
+<p class="header">Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+
+<!--название статьи-->
+<span class="article">Название статьи:</span>
+<div class="LL">
+		<input class="artname" type="text" name="articlename">
+</div>
+
+<!--рубрика-->
+<span class="article">Рубрика:</span>
+<div class="LL">
+	<select name="type" required>
+		<option value="t1">программирование</option>
+		<option value="t2">медицина</option>
+		<option value="t3">искусство</option>
+		<option value="t4">музыка</option>
+		<option value="t5">путешествия</option>
+	</select>
+</div>
+
+<!--публикация (пк)-->
+<span class="article">Разрешить публикацию:</span>
+
+<!--широкий макет-->
+<div class="LLPC">
+	<input type="radio" value="site"> на сайте
+	<input type="radio" value="magazine"> в журнале
+	<input type="radio" value="site&mag"> в журнале и на сайте
+</div>
+
+<!--узкий макет-->
+<div class="LLsmall">
+	<p><input type="radio" value="site"> на сайте</p>
+	<p><input type="radio" value="magazine"> в журнале</p>
+	<p><input type="radio" value="site&mag"> в журнале и на сайте</p>
+</div>
+
+
+<!--комментарии-->
+<div class="comms">
+<span class="articlecheck">Разрешить комментарии:</span>
+<div class="LLcheck">
+	<input type="checkbox" name="comment[]"> 	
+</div>
+</div>
+
+<!--текст статьи-->
+<div>
+	<span>Текст статьи:</span>
+	<div class="arttext">
+		<textarea name="yourarticle"></textarea>
+	</div> 	
+</div>
+
+<!--кнопка отправления-->
+<button type="submit">Отправить</button>
+	
+</fieldset>
+</form>
+	
+</body>
+
+</html>

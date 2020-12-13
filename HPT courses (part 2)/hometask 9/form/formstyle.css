@@ -1,0 +1,81 @@
+/*для широкого макета*/
+@media screen and (min-width: 700px) and (color){
+
+	.article{
+		width: 200px;
+		float: left;
+	}
+
+	.articlecheck{
+		float: left;
+	}
+
+	.LLcheck{
+		margin-left: 200px;
+	}
+
+	.LLPC{
+		margin-left: 200px;
+	}
+
+	.LL{
+		margin-left: 200px;
+	}
+
+	.LLsmall{
+		display: none;
+	}
+
+	.artname{
+		width: 100%;
+	}
+
+	.comms{
+		width: 250px;
+	}
+
+	textarea{
+		width: 100%;
+		resize: none;
+	}
+
+}
+
+/*для узкого макета*/
+@media screen and (max-width: 699px) and (color){
+
+	.article{
+		width: 200px;
+	}
+
+	.LLcheck{
+		float: right;
+		margin-right: 50px;
+	}
+
+	.LLPC{
+		display: none;
+	}
+
+	.LL{
+		margin-left: 0px;
+	}
+
+	.LLsmall{
+		margin-left: 0px;
+	}
+
+	.artname{
+		width: 100%;
+	}
+
+	.comms{
+		width: 250px;
+	}
+
+	textarea{
+		width: 100%;
+		resize: none;
+	}
+
+}	

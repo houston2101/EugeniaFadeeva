@@ -1,0 +1,54 @@
+.article{
+	text-align: center;
+	font-size: large; 
+}
+
+.pics{
+	width: 500px;
+	height: 500px;
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.biohazard{
+	position: absolute;
+	z-index: auto;
+}
+
+.manwoman{
+	margin-left: 250px;
+	position: absolute;
+	z-index: auto;
+}
+
+.yinyang{
+	margin-top: 250px;
+	margin-left: 125px;
+	position: absolute;
+	z-index: auto;
+}
+
+.nosmoking{
+	margin-left: 125px;
+	margin-top: 125px;
+	position: absolute;
+	z-index: auto;
+}
+
+img{
+	width: 250px;
+	height: 250px;
+}
+
+.biohazard:hover{
+	z-index: 2;
+}
+
+.manwoman:hover{
+	z-index: 2;
+}
+
+.yinyang:hover{
+	z-index: 2;
+}

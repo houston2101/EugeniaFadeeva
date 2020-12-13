@@ -1,0 +1,140 @@
+/*для широких экранов*/
+@media screen and (min-width: 800px) and (color){
+
+.headbanner{
+ 		text-align: center;
+ 		padding: 10px;
+ 		margin-bottom: -40px;
+ 		background-color: skyblue;
+ 		color: blue;
+ 	}
+
+ 	.balls{
+ 		background: url(ball.jpeg) right repeat-y;
+ 	}
+
+ 	.menuback{
+ 		background: url(menuback.jpeg) repeat-y;
+ 	}
+
+ 	.menudesk{
+ 		float: left; 
+ 		width: 200px; 
+ 		min-width: 200px;
+ 	}
+
+ 	.menusmart{
+ 		display: none;
+ 	}
+
+ 	.article{
+ 		margin-left: 200px;
+ 	}
+
+ 	.footerbanner{
+ 		text-align: center; 
+ 		padding: 10px; 
+ 		background-color: skyblue; 
+ 		color: blue;
+ 	}
+
+ 	.clear{
+ 		clear: both;
+ 	}
+
+ 	div.menu p{
+ 		font-weight: bold; 
+ 		text-indent: 10px;
+ 		text-align: left;
+ 	}
+
+	div.menudesk p{
+		font-weight: bold; 
+ 		text-align: left;
+ 		padding: 10px;
+ 	}
+
+ 	div.article img{
+ 		margin-right: 15px; 
+ 		float: left;
+ 		width: 250px;
+ 		height: 180px;
+ 	}
+
+ 	div.article div p{
+		font-weight: bold;
+		font-size: 40px;
+		text-align: center;
+	}
+}
+
+/*для узких экранов*/
+@media screen and (max-width: 799px) and (color){
+
+	.headbanner{
+		display: none;
+ 	}
+
+ 	.balls{
+ 		background: url(ball.jpeg) right repeat-y;
+ 		background-color: white;
+ 		margin-bottom: 0px;
+ 	}
+
+ 	.menuback{
+ 		background-color: none;
+ 	}
+
+ 	.menudesk{
+		display: none;
+ 	}
+
+ 	.menusmart{
+ 		background-color: khaki;
+ 		margin-top: 0px;
+ 	}
+
+ 	.article{
+ 		width: 100%;
+ 	}
+
+ 	.footerbanner{
+ 		display: none;
+ 	}
+
+ 	.clear{
+ 		clear: both;
+ 	}
+
+ 	div.menu p{
+ 		font-weight: bold; 
+ 		text-indent: 10px;
+ 		text-align: left;
+ 	}
+
+ 	div.menusmart p{
+ 		font-weight: bold; 
+ 		text-align: center;
+ 		padding: 10px;
+ 	}
+
+ 	div.menusmart div.list p{
+ 		margin: 0px;
+ 		text-align: center;
+  	}
+
+ 	div.article img{
+ 		width: 100%;
+	}
+
+	div.article div p{
+		font-weight: bold;
+		font-size: 40px;
+		text-align: center;
+		background-color: white;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		padding-bottom: 10px;
+	}
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>chess</title>
+
+<style>
+	table.CHESS
+  {
+    border-collapse: collapse;
+  }
+  	table.CHESS td
+  {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
+  }
+
+/*чёрный: нечётная строка, нечётная ячейка*/
+.chess tr:nth-child(odd) td:nth-child(odd){
+	background-color: black;
+}
+/*чёрный: чётная строка, чётная ячейка*/	
+.chess tr:nth-child(even) td:nth-child(even){
+	background-color: black;
+}
+/*верхняя граница*/
+.chess tr:first-child td{
+	background-color: aquamarine;
+  height: 25px;
+}
+/*нижняя граница*/
+.chess tr:last-child td{
+	background-color: aquamarine;
+  height: 25px;
+}
+/*левая граница*/
+.chess td:first-child{
+	background-color: aquamarine;
+  width: 25px;
+}
+/*правая граница*/
+.chess td:last-child{
+	background-color: aquamarine;
+  width: 25px;
+}
+/*закрашиваем нечётные чёрные ячейки верхней границы*/
+.chess tr:first-child td:nth-child(odd){
+	background-color: aquamarine;
+}
+/*закрашиваем чётные чёрные ячейки нижней границы*/
+.chess tr:last-child td:nth-child(even){
+	background-color: aquamarine;
+}
+/*закрашиваем первые ячейки нечётных строк(левая граница)*/
+.chess tr:nth-child(odd) td:first-child{
+	background-color: aquamarine;
+}
+
+/*закрашиваем последние ячейки чётных строк(правая граница)*/
+.chess tr:nth-child(even) td:last-child{
+	background-color: aquamarine;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="chess">
+<table class='CHESS'>
+
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>
